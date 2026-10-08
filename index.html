@@ -1,0 +1,289 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Nurliana Amelia | Atlet Bola Basket</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#f97316', // Orange-500
+                            600: '#ea580c', // Orange-600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { scroll-behavior: smooth; }
+        .fade-in { animation: fadeIn 1s ease-in forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <span class="font-heading text-xl text-white tracking-wider">NA.<span class="text-brand-500">BASKETBALL</span></span>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#profil" class="hover:text-brand-500 transition-colors">Profil</a>
+                    <a href="#pengalaman" class="hover:text-brand-500 transition-colors">Pengalaman</a>
+                    <a href="#kemampuan" class="hover:text-brand-500 transition-colors">Kemampuan</a>
+                    <a href="#kontak" class="hover:text-brand-500 transition-colors">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=2090&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-brand-500 p-1 shadow-2xl shadow-brand-500/20 fade-in overflow-hidden shrink-0">
+                <img src="https://placehold.co/400x400/1e293b/f97316?text=Foto+Anda" alt="Nurliana Amelia" class="w-full h-full object-cover rounded-full">
+            </div>
+            <div class="text-center md:text-left fade-in delay-100">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-sm font-medium mb-4 border border-brand-500/20">
+                    <i class="fas fa-map-marker-alt"></i> Toli Toli, Sulawesi Tengah
+                </div>
+                <h1 class="font-heading text-5xl md:text-7xl text-white mb-2 uppercase">Nurliana <br/> <span class="text-brand-500">Amelia</span></h1>
+                <p class="text-xl md:text-2xl text-slate-400 mb-8 font-light tracking-wide">Atlet Bola Basket | Point Guard</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#video" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-brand-500/30 flex items-center gap-2">
+                        <i class="fas fa-play-circle"></i> Lihat Highlight
+                    </a>
+                    <a href="#kontak" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-6 py-3 rounded-lg font-medium transition-all flex items-center gap-2">
+                        <i class="fas fa-envelope"></i> Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+        
+        <!-- About & Stats Section -->
+        <section id="profil" class="scroll-mt-24 fade-in delay-200">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="font-heading text-3xl md:text-4xl text-white uppercase flex items-center gap-3">
+                        <i class="fas fa-user text-brand-500"></i> Profil Singkat
+                    </h2>
+                    <p class="text-lg leading-relaxed text-slate-400">
+                        Saya adalah seorang pemain bola basket asal Toli Toli yang berdedikasi tinggi, disiplin, dan selalu haus akan perkembangan. Memiliki visi bermain yang baik dan kemampuan bekerja sama dalam tim, saya selalu berkomitmen untuk memberikan kontribusi maksimal baik saat bertahan (defense) maupun menyerang (offense). Saya mencari peluang untuk terus bertanding di level yang lebih tinggi dan membawa nama baik tim.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 flex flex-col items-center justify-center text-center">
+                        <i class="fas fa-ruler-vertical text-3xl text-brand-500 mb-2"></i>
+                        <span class="text-sm text-slate-400 uppercase tracking-wider">Tinggi</span>
+                        <span class="text-2xl font-bold text-white">[168] cm</span>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 flex flex-col items-center justify-center text-center">
+                        <i class="fas fa-weight-scale text-3xl text-brand-500 mb-2"></i>
+                        <span class="text-sm text-slate-400 uppercase tracking-wider">Berat</span>
+                        <span class="text-2xl font-bold text-white">[58] kg</span>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 flex flex-col items-center justify-center text-center">
+                        <i class="fas fa-basketball text-3xl text-brand-500 mb-2"></i>
+                        <span class="text-sm text-slate-400 uppercase tracking-wider">Posisi</span>
+                        <span class="text-xl font-bold text-white">[PG / SG]</span>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700/50 flex flex-col items-center justify-center text-center">
+                        <i class="fas fa-hand text-3xl text-brand-500 mb-2"></i>
+                        <span class="text-sm text-slate-400 uppercase tracking-wider">Tangan Dominan</span>
+                        <span class="text-xl font-bold text-white">[Kanan]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Achievements -->
+        <section id="pengalaman" class="scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Tim History -->
+                <div>
+                    <h2 class="font-heading text-3xl text-white uppercase flex items-center gap-3 mb-8">
+                        <i class="fas fa-users text-brand-500"></i> Riwayat Tim
+                    </h2>
+                    <div class="space-y-6 border-l-2 border-brand-500/30 pl-6 ml-3">
+                        <div class="relative">
+                            <span class="absolute -left-[35px] top-1 h-5 w-5 rounded-full bg-slate-900 border-4 border-brand-500"></span>
+                            <span class="text-sm text-brand-500 font-medium">2023 - Sekarang</span>
+                            <h3 class="text-xl font-bold text-white mt-1">[Nama Klub/Tim Saat Ini]</h3>
+                            <p class="text-slate-400 mt-2"><span class="text-slate-300 font-medium">Peran:</span> [Kapten Tim / Starting Point Guard]</p>
+                            <p class="text-slate-400 text-sm mt-1">Fokus pada mengatur tempo permainan dan perimeter defense.</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -left-[35px] top-1 h-5 w-5 rounded-full bg-slate-900 border-4 border-brand-500"></span>
+                            <span class="text-sm text-brand-500 font-medium">2021 - 2023</span>
+                            <h3 class="text-xl font-bold text-white mt-1">[Nama Tim Sekolah SMA]</h3>
+                            <p class="text-slate-400 mt-2"><span class="text-slate-300 font-medium">Peran:</span> [Shooting Guard Utama]</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -left-[35px] top-1 h-5 w-5 rounded-full bg-slate-900 border-4 border-brand-500"></span>
+                            <span class="text-sm text-brand-500 font-medium">2022</span>
+                            <h3 class="text-xl font-bold text-white mt-1">[Tim Porda Toli Toli]</h3>
+                            <p class="text-slate-400 mt-2"><span class="text-slate-300 font-medium">Peran:</span> Mewakili Kabupaten Toli Toli dalam ajang [Nama Kejuaraan].</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div>
+                    <h2 class="font-heading text-3xl text-white uppercase flex items-center gap-3 mb-8">
+                        <i class="fas fa-trophy text-brand-500"></i> Prestasi Terbaik
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 flex items-start gap-4 hover:border-brand-500/50 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-yellow-500/20 text-yellow-500 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fas fa-medal text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">[Tahun] - Juara 1 [Nama Turnamen]</h4>
+                                <p class="text-slate-400 text-sm">[Lokasi Turnamen]</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 flex items-start gap-4 hover:border-brand-500/50 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-brand-500/20 text-brand-500 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fas fa-star text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">[Tahun] - MVP (Most Valuable Player)</h4>
+                                <p class="text-slate-400 text-sm">[Nama Turnamen]</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800/80 p-5 rounded-xl border border-slate-700 flex items-start gap-4 hover:border-brand-500/50 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-blue-500/20 text-blue-500 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fas fa-shield-alt text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">[Tahun] - Best Defender / Top Score</h4>
+                                <p class="text-slate-400 text-sm">[Nama Turnamen]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Attributes -->
+        <section id="kemampuan" class="scroll-mt-24">
+            <h2 class="font-heading text-3xl text-center text-white uppercase mb-12">
+                <i class="fas fa-bolt text-brand-500 mr-2"></i> Kemampuan Teknis
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-12 h-12 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500 text-xl"><i class="fas fa-crosshairs"></i></div>
+                        <h3 class="text-xl font-bold text-white">Shooting</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm">Akurasi tembakan mid-range yang stabil dan free throw yang dapat diandalkan saat situasi krusial.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-12 h-12 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500 text-xl"><i class="fas fa-hand-sparkles"></i></div>
+                        <h3 class="text-xl font-bold text-white">Ball Handling</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm">Mampu mengontrol bola dengan sangat baik saat menghadapi pressure ketat dari defense lawan.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-12 h-12 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500 text-xl"><i class="fas fa-hand-paper"></i></div>
+                        <h3 class="text-xl font-bold text-white">Defense</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm">Kuat dalam man-to-man defense dan memiliki insting cepat dalam melakukan steal atau memotong jalur passing.</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-12 h-12 rounded-lg bg-brand-500/10 flex items-center justify-center text-brand-500 text-xl"><i class="fas fa-eye"></i></div>
+                        <h3 class="text-xl font-bold text-white">Playmaking & Vision</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm">Memiliki Court Vision yang luas untuk mendistribusikan bola dan menciptakan peluang bagi rekan setim.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Highlight -->
+        <section id="video" class="scroll-mt-24">
+            <div class="bg-slate-800 rounded-3xl p-2 md:p-4 border border-slate-700 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-orange-300"></div>
+                <div class="p-6 md:p-8 text-center">
+                    <h2 class="font-heading text-3xl text-white uppercase mb-4">Highlight Video</h2>
+                    <p class="text-slate-400 mb-8 max-w-2xl mx-auto">Tonton cuplikan pertandingan terbaru saya untuk melihat gaya bermain, pergerakan tanpa bola, dan kontribusi saya di lapangan.</p>
+                    
+                    <!-- Placeholder untuk Video YouTube -->
+                    <!-- Ganti src YouTube di bawah ini dengan link embed video Anda -->
+                    <div class="aspect-video w-full max-w-4xl mx-auto bg-slate-900 rounded-xl overflow-hidden border border-slate-700 relative flex items-center justify-center group cursor-pointer" onclick="document.getElementById('yt-iframe').src='https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'">
+                        <!-- Ini Tampilan Sebelum Di Klik (Bisa diganti Iframe langsung) -->
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519861531473-920026076fb6?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40 group-hover:opacity-30 transition-opacity"></div>
+                        <div class="w-20 h-20 bg-brand-500 text-white rounded-full flex items-center justify-center text-3xl shadow-[0_0_30px_rgba(249,115,22,0.6)] group-hover:scale-110 transition-transform z-10">
+                            <i class="fas fa-play ml-1"></i>
+                        </div>
+                        <p class="absolute bottom-6 text-white font-medium z-10 bg-black/50 px-4 py-1 rounded-full text-sm backdrop-blur-sm">[Ganti dengan Link Video Anda]</p>
+                        
+                        <!-- Iframe Asli (Disembunyikan dlu) -->
+                        <iframe id="yt-iframe" class="absolute inset-0 w-full h-full hidden" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                    <script>
+                        // Script kecil untuk mengubah tampilan placeholder jadi video
+                        const videoContainer = document.querySelector('.aspect-video');
+                        videoContainer.addEventListener('click', function() {
+                            this.querySelector('iframe').classList.remove('hidden');
+                            this.querySelectorAll('div, p').forEach(el => el.classList.add('hidden'));
+                        });
+                    </script>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="kontak" class="bg-slate-950 border-t border-slate-800 pt-16 pb-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                <div>
+                    <h2 class="font-heading text-3xl text-white uppercase mb-6">Hubungi Saya</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">Tertarik untuk berdiskusi tentang peluang masuk tim, beasiswa olahraga, atau kerjasama lainnya? Silakan hubungi saya melalui kontak di bawah ini.</p>
+                    
+                    <div class="space-y-4">
+                        <a href="mailto:nurliana.amelia@email.com" class="flex items-center gap-4 text-slate-300 hover:text-brand-500 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center"><i class="fas fa-envelope"></i></div>
+                            <span>[nurliana.amelia@email.com]</span>
+                        </a>
+                        <a href="#" class="flex items-center gap-4 text-slate-300 hover:text-brand-500 transition-colors">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center"><i class="fab fa-whatsapp text-lg"></i></div>
+                            <span>[+62 812-3456-7890]</span>
+                        </a>
+                        <a hre
